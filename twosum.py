@@ -10,9 +10,7 @@ def twoSum(nums: List[int], target: int) -> List[int]:
   # hash map pattern Time: O(n), Space: O(n)
   h = {}
   for i, num in enumerate(nums):
-    print(f"i: {i}, num: {num}")
     n = target - num
-    print(h)
     if n not in h:
       h[num] = i
     else:
